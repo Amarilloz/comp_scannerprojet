@@ -5,15 +5,17 @@
  */
 package joueurscanner;
 
+import java.awt.Color;
+
 /**
  *
  * @author Formation
  */
-public enum Genre {
-    HOMME,
-    FEMME;
+public interface Ressource {
 
-    boolean equalsignorecase(String m) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public String getJeux();
+
+    public void setJeux(String jeux);
+
+    public Color getCouleur();
 }
